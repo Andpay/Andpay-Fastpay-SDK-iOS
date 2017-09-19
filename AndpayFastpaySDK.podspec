@@ -16,14 +16,14 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'AndpayFastpaySDK/APFastPaySDK.framework/*.{h}'
 
-  s.resource = 'lib/AndpayFastPaySDK.bundle'
-  s.ios.vendored_frameworks = 'lib/APFastPaySDK.framework'
+  s.resource = 'AndpayFastpaySDK/AndpayFastPaySDK.bundle'
+  s.ios.vendored_frameworks = 'AndpayFastpaySDK/APFastPaySDK.framework'
   s.framework  = "SystemConfiguration", "UIKit", "CoreLocation", "Foundation", "Security"
 
 
 
   s.subspec "AndpayFastpayEx001" do |ss|
-    ss.ios.vendored_frameworks = 'lib/AndpayFastpayEx001.framework'
+    ss.ios.vendored_frameworks = 'AndpayFastpaySDK/AndpayFastpayEx001.framework'
     ss.frameworks =  "CFNetwork", "QuartzCore", "CoreGraphics"
   end
 
