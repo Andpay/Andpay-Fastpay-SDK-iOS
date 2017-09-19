@@ -69,17 +69,15 @@ config.isDebug = YES;
 [APFastPaySdkManager initWithConfig:config];
 ```
 
-####调用快捷支付模块接口
+####调用快捷支付模块接口<br/>
 ${yourController}是你启动sdk的页面。<br/>
 ${yourDelegate}是你接收sdk回调事件的代理。<br/>
-${params}备用扩展字段<br/>
+${params} 扩展字段。<br/>
 
 ```
 [APFastPaySdkManager startAPFastPayModuleWithProvider:${yourController} delegate:${yourDelegate} Params:${params}];
 ```
-
-#### 代理回调
-```
-
-```
+######其中params包含以下参数：<br/>
+mobileNo：用户手机号（可选） 若在调起时传入则无需用户在sdk内输入手机号
+	
 

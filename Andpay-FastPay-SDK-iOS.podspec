@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Andpay-Fastpay-SDK-iOS"
-  s.version      = "0.1.0"
+  s.version      = "0.0.1"
   s.summary      = "Andpay-Fastpay-SDK-iOS"
 
   s.homepage     = "https://github.com/Andpay/Andpay-Fastpay-SDK-iOS.git"
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Classes", "lib/*.{h}"
   s.exclude_files = "Classes/Exclude"
-
+  s.resource = 'lib/AndpayFastPaySDK.bundle'
   s.ios.vendored_frameworks = 'lib/APFastPaySDK.framework'
   s.framework  = "SystemConfiguration", "UIKit", "CoreLocation", "Foundation", "Security"
 
