@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsy-cL-0cK">
+                                <rect key="frame" x="110.5" y="318" width="153" height="30"/>
+                                <state key="normal" title="调起和付快捷支付SDK"/>
+                                <connections>
+                                    <action selector="onCallsdk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lk9-Ry-Z9U"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="若输入手机号，则在SDK中无需填写" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZz-iq-u7V">
+                                <rect key="frame" x="41" y="238" width="293" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kZz-iq-u7V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="3HY-sM-uhT"/>
+                            <constraint firstItem="kZz-iq-u7V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HbE-NW-tF4"/>
+                            <constraint firstItem="Rsy-cL-0cK" firstAttribute="top" secondItem="kZz-iq-u7V" secondAttribute="bottom" constant="50" id="MXP-I5-y2W"/>
+                            <constraint firstItem="Rsy-cL-0cK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RIR-rQ-0ed"/>
+                            <constraint firstItem="Rsy-cL-0cK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ftd-Ke-5hY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kZz-iq-u7V" secondAttribute="trailing" constant="25" id="qNc-H7-bJE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneInput" destination="kZz-iq-u7V" id="qEa-Qm-68O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

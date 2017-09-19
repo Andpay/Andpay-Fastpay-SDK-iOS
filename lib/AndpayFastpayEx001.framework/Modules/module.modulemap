@@ -1,0 +1,6 @@
+framework module AndpayFastpayYiLianSDKExtension {
+  umbrella header "AndpayFastpayYiLianSDKExtension.h"
+
+  export *
+  module * { export * }
+}
