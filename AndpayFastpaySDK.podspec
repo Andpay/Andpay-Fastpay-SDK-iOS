@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "#{s.homepage}", :tag => "#{s.version}" }
 
-  s.source_files  = 'AndpayFastpaySDK/APFastPaySDK.framework/*.{h}'
+  s.source_files  = 'AndpayFastpaySDK/AndpayFastpayYiLianSDKExtensionMock.h'
 
   s.resource = 'AndpayFastpaySDK/AndpayFastPaySDK.bundle'
   s.ios.vendored_frameworks = 'AndpayFastpaySDK/APFastPaySDK.framework'
