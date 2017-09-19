@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Andpay-Fastpay-SDK-iOS"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Andpay-Fastpay-SDK-iOS"
 
   s.homepage     = "https://github.com/Andpay/Andpay-Fastpay-SDK-iOS.git"
