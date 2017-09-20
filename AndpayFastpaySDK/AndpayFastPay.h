@@ -1,6 +1,5 @@
 //
 //  AndpayFastPay.h
-//  fastPayTestDemo
 //
 //  Created by andpay on 2017/9/20.
 //  Copyright © 2017年 com.andpay.me. All rights reserved.
