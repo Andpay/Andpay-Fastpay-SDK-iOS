@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "#{s.homepage}", :tag => "#{s.version}" }
 
 
-  spec.default_subspec = 'AndpayFastpay'
+  s.default_subspec = 'AndpayFastpay'
 
 
   s.subspec "AndpayFastpay" do |base|
