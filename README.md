@@ -15,7 +15,7 @@ iOS SDK 要求 iOS 8.0 及以上版本
 1. 在 `Podfile` 添加
 
 ```
-pod 'AndpayFastpaySDK', '~> 0.1.2', :subspecs => ["AndpayFastpayEx001"]
+pod 'AndpayFastpaySDK', '~> 1.0.0', :subspecs => ["AndpayFastpayEx001"]
 ```
 
 2. 运行 `pod update`
@@ -56,6 +56,7 @@ CoreGraphics.framework<br/>
 
 ```
 #import "AndpayFastPay.h"
+//如是pod引入用#import <AndpayFastPay.h>
 ```
 ##### 初始化
 在应用初始化方法中添加sdk的初始化配置
@@ -75,6 +76,7 @@ config.isDebug = YES;
 
 ```
 #import "AndpayFastPay.h"
+//如是pod引入用#import <AndpayFastPay.h>
 ```
 ${yourController}是你启动sdk的页面。<br/>
 ${yourDelegate}是你接收sdk回调事件的代理。<br/>
