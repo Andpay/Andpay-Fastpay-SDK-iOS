@@ -15,7 +15,7 @@ iOS SDK 要求 iOS 8.0 及以上版本
 1. 在 `Podfile` 添加
 
 ```
-pod 'AndpayFastPaySDK', '~> 0.1.1', :subspecs => ["AndpayFastpayEx001"]
+pod 'AndpayFastpaySDK', '~> 0.1.1', :subspecs => ["AndpayFastpayEx001"]
 ```
 
 2. 运行 `pod update`
@@ -51,13 +51,13 @@ CoreGraphics.framework<br/>
 
 #### 调用SDK
 
-在AppDelegate中
-#####引入头文件
+在AppDelegate中<br/>
+##### 引入头文件
 
 ```
 #import "AndpayFastPay.h"
 ```
-#####初始化
+##### 初始化
 在应用初始化方法中添加sdk的初始化配置
 
 ```
@@ -70,7 +70,7 @@ config.isDebug = YES;
 [APFastPaySdkManager initWithConfig:config];
 ```
 
-####调用快捷支付模块接口<br/>
+#### 调用快捷支付模块接口<br/>
 在启动sdk的页面引入头文件
 
 ```
@@ -83,10 +83,10 @@ ${params} 扩展字段。<br/>
 ```
 [APFastPaySdkManager startAPFastPayModuleWithProvider:${yourController} delegate:${yourDelegate} Params:${params}];
 ```
-######其中params包含以下参数：<br/>
+###### 其中params包含以下参数：<br/>
 mobileNo：用户手机号（可选） 若在调起时传入则无需用户在sdk内输入手机号
 	
-###sdk事件回调
+### sdk事件回调
 sdk在运行过程中会发布一些关键性的事件，接入方可以在调用sdk时传入代理对象来获取这些事件的回调<br/>
 ```
 - (void)apFastPayEventResponse:(APFastPayEvent *)response
