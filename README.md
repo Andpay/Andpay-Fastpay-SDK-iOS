@@ -15,7 +15,7 @@ iOS SDK 要求 iOS 8.0 及以上版本
 1. 在 `Podfile` 添加
 
 ```
-pod 'AndpayFastpaySDK', '~> 0.1.1', :subspecs => ["AndpayFastpayEx001"]
+pod 'AndpayFastpaySDK', '~> 0.1.2', :subspecs => ["AndpayFastpayEx001"]
 ```
 
 2. 运行 `pod update`
