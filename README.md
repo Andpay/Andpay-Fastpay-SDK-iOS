@@ -3,8 +3,8 @@ Andpay-FastPay-SDK-iOS
 和付快捷支付SDK-iOS
 -------------------
 ## 简介
-lib文件夹是iOS framework文件与bundle资源包，<br/>
-demo文件夹中是一个简单的接入示例，该示例仅供参考。
+AndpayFastpaySDK 文件夹里面是 两个framework,一个包含所有头文件的AndpayFastPay.h以及一个资源bundle包。<br/>
+demo文件夹中是一个简单的手动导入的接入示例，该示例仅供参考。
 
 ## 版本要求
 iOS SDK 要求 iOS 8.0 及以上版本
@@ -15,7 +15,7 @@ iOS SDK 要求 iOS 8.0 及以上版本
 1. 在 `Podfile` 添加
 
 ```
-pod 'AndpayFastPaySDK', '~> 0.1.0', :subspecs => ["AndpayFastpayEx001"]
+pod 'AndpayFastPaySDK', '~> 0.1.1', :subspecs => ["AndpayFastpayEx001"]
 ```
 
 2. 运行 `pod update`
