@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     APFastPaySdkConfig *config = [[APFastPaySdkConfig alloc] init];
-    config.environment = APFastPayProductEnvironment;
+    config.environment = APFastPayTestEnvironment;
     config.isDebug = YES;
     
     [AndpayFastPaySDK initWithConfig:config];
